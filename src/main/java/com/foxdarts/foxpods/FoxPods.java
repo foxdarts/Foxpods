@@ -17,6 +17,7 @@ public class FoxPods {
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
+    //important notes!
     public FoxPods()
     {
 

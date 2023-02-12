@@ -1,7 +1,7 @@
-package com.foxdarts.foxpods;
+package com.foxdarts.racoonpods;
 
 
-import com.foxdarts.foxpods.item.ModItems;
+import com.foxdarts.racoonpods.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,15 +11,15 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(FoxPods.MOD_ID)
-public class FoxPods {
+@Mod(racoonpods.MOD_ID)
+public class racoonpods {
 
-    public static final String MOD_ID = "foxpods";
+    public static final String MOD_ID = "racoonpods";
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
     //important notes!
-    public FoxPods()
+    public racoonpods()
     {
 
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

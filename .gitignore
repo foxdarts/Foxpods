@@ -23,3 +23,6 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+/src/main/java/com/foxdarts/racoonpods/item/ModCreativeModeTabs.java
+/src/main/java/com/foxdarts/racoonpods/item/ModItems.java
+/src/main/resources/

@@ -13,15 +13,15 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = RacoonPods.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModCreativeModeTabs {
 
-    public static CreativeModeTab RACOON_PODS_TAB;
+    public static CreativeModeTab RACOONPODS_TAB;
 
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event)
     {
 
-        RACOON_PODS_TAB = event.registerCreativeModeTab(new ResourceLocation(RacoonPods.MOD_ID, "racoon_pods_tab"),
+        RACOONPODS_TAB = event.registerCreativeModeTab(new ResourceLocation(RacoonPods.MOD_ID, "racoonpods_tab"),
                 builder -> builder.icon(() -> new ItemStack(ModItems.RACOON_POUCH.get()))
-                        .title(Component.translatable("creativemodetab.racoon_pods_tab")));
+                        .title(Component.translatable("creativemodetab.racoonpods_tab")));
 
     }
 

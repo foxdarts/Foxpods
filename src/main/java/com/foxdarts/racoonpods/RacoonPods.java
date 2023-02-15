@@ -1,6 +1,7 @@
 package com.foxdarts.racoonpods;
 
 
+import com.foxdarts.racoonpods.block.ModBlocks;
 import com.foxdarts.racoonpods.item.ModCreativeModeTabs;
 import com.foxdarts.racoonpods.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -28,6 +29,7 @@ public class RacoonPods {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -53,7 +55,14 @@ public class RacoonPods {
 
         }
 
-        if(event.getTab() == ModCreativeModeTabs.RACOON_PODS_TAB)
+        if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS)
+        {
+
+            event.accept(ModBlocks.RACOON_FUR_BLOCK);
+
+        }
+
+        if(event.getTab() == ModCreativeModeTabs.RACOONPODS_TAB)
         {
 
             event.accept(ModItems.RACOON_POUCH);

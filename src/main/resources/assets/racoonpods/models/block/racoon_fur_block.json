@@ -1,0 +1,11 @@
+{
+
+  "parent": "minecraft:block/cube_all",
+  "textures":
+  {
+
+    "all": "racoonpods:block/racoon_fur_block"
+
+  }
+
+}

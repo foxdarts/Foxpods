@@ -20,7 +20,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, RacoonPods.MOD_ID);
 
 
-    public static final RegistryObject<Block> RACOON_FUR_BLOCK = registerBlock("racoon_fur_block",
+    public static final RegistryObject<Block> LEATHER_BLOCK = registerBlock("leather_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION)
                     .strength(6f).requiresCorrectToolForDrops()));
 

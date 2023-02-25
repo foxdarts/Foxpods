@@ -4,7 +4,6 @@ package com.foxdarts.racoonpods;
 import com.foxdarts.racoonpods.block.ModBlocks;
 import com.foxdarts.racoonpods.item.ModCreativeModeTabs;
 import com.foxdarts.racoonpods.item.ModItems;
-import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -13,14 +12,13 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.slf4j.Logger;
 
 @Mod(RacoonPods.MOD_ID)
 public class RacoonPods {
 
     public static final String MOD_ID = "racoonpods";
 
-    private static final Logger LOGGER = LogUtils.getLogger();
+    //private static final Logger LOGGER = LogUtils.getLogger();
 
     //important notes!
     public RacoonPods()
@@ -35,6 +33,8 @@ public class RacoonPods {
 
         MinecraftForge.EVENT_BUS.register(this);
 
+        modEventBus.addListener(this::addCreative);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -46,7 +46,7 @@ public class RacoonPods {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
-
+        //todo redo png files for textures of items/blocks
         if(event.getTab() == CreativeModeTabs.INGREDIENTS)
         {
 
@@ -58,7 +58,7 @@ public class RacoonPods {
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS)
         {
 
-            event.accept(ModBlocks.RACOON_FUR_BLOCK);
+            event.accept(ModBlocks.LEATHER_BLOCK);
 
         }
 

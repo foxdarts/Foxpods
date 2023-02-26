@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key":
+  {
+
+    "#":
+    {
+
+      "item": "minecraft:leather"
+
+    }
+
+  },
+  "pattern":
+  [
+
+    "###",
+    "###",
+    "###"
+
+  ],
+
+  "result":
+  {
+
+    "item": "racoonpods:leather_block"
+
+  }
+}

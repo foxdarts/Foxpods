@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "R": {
+      "item": "racoonpods:bid_racoon_pouch"
+    },
+    "T": {
+      "tag": "minecraft:sweet_berries"
+    }
+  },
+  "pattern": [
+    "T#T",
+    "#R#",
+    "###"
+  ],
+  "result": {
+    "item": "racoonpods:big_racoon_pouch"
+  }
+}

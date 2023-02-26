@@ -67,6 +67,7 @@ public class RacoonPods {
 
             event.accept(ModItems.RACOON_POUCH);
             event.accept(ModItems.BIG_RACOON_POUCH);
+            event.accept(ModBlocks.LEATHER_BLOCK);
 
         }
 

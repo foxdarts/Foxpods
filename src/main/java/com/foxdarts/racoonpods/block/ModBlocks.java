@@ -22,7 +22,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> LEATHER_BLOCK = registerBlock("leather_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION)
-                    .strength(6f).requiresCorrectToolForDrops()));
+                    .strength(6f).requiresCorrectToolForDrops().instabreak()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

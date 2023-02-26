@@ -6,10 +6,10 @@
       "item": "minecraft:leather"
     },
     "R": {
-      "item": "racoonpods:iron_ingot"
+      "item": "minecraft:iron_ingot"
     },
     "T": {
-      "tag": "minecraft:sweet_berries"
+      "item": "minecraft:sweet_berries"
     }
   },
   "pattern": [
